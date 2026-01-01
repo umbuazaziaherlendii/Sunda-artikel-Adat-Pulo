@@ -15,12 +15,14 @@
   <body>
     <header>
       <h1>Project Sunda</h1>
-      <!-- Elemen kosong dihapus -->
     </header>
 
     <div class="nav">
       <nav>
-        <ul>
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-menu">
           <li><h1>Kampung Adat Pulo</h1></li>
           <li><a href="#sajarah"><i class="fas fa-history"></i> Sajarah Singget</a></li>
           <li><a href="#lokasi"><i class="fas fa-map-marker-alt"></i> Lokasi</a></li>
@@ -129,5 +131,12 @@
     <footer>
       <p>&copy; 2023 Kampung Adat Pulo - Project Sunda. Dibuat dengan cinta untuk budaya Sunda.</p>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>
